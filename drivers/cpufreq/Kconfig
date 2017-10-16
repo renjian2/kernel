@@ -118,7 +118,7 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactive' governor for latency-sensitive workloads.
 
-<<<<<<< HEAD
+
 config CPU_FREQ_DEFAULT_GOV_RELAXED
 	bool "relaxed"
 	select CPU_FREQ_GOV_RELAXED
@@ -131,12 +131,12 @@ config CPU_FREQ_DEFAULT_GOV_RELAXED
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the interactive governor.
 
-=======
+
 config CPU_FREQ_DEFAULT_GOV_DARKNESS
 	bool "darkness"
 	select CPU_FREQ_GOV_DARKNESS
 	
->>>>>>> b8ef9a2...  cpufreq: Add Darkness Governor
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -235,7 +235,7 @@ config CPU_FREQ_GOV_CONSERVATIVE
 
 	  If in doubt, say N.
 
-<<<<<<< HEAD
+
 config CPU_FREQ_GOV_RELAXED
 	tristate "'relaxed' cpufreq governor"
 	depends on CPU_FREQ
@@ -245,9 +245,6 @@ config CPU_FREQ_GOV_RELAXED
 	  'relaxed' - similar to 'conservative', but optimized for devices
 	  that go into suspended or display off states often.
 
-=======
-<<<<<<< HEAD
-=======
 config CPU_FREQ_GOV_DARKNESS
 	tristate "'darkness' cpufreq policy governor"
 
@@ -257,8 +254,7 @@ config CPU_FREQ_GOV_BIOSHOCK
 	help
 	  'bioshock' - More aggressive version of conservative
 
->>>>>>> 8d038a0... almighty: cpufreq: Add Darkness Governor
->>>>>>> b8ef9a2...  cpufreq: Add Darkness Governor
+
 config CPU_BOOST
 	tristate "Event base short term CPU freq boost"
 	depends on CPU_FREQ
